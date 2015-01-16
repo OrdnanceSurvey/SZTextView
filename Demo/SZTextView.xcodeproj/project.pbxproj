@@ -39,10 +39,10 @@
 		5B8D20E916F1717200D92F51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D20E716F1717200D92F51 /* InfoPlist.strings */; };
 		5B8D20EC16F1717200D92F51 /* SZTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20EB16F1717200D92F51 /* SZTextViewTests.m */; };
 		5B8D20F816F171FC00D92F51 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20F616F171FC00D92F51 /* SZTextView.m */; };
-		B37997441A69203000519DBE /* SZTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = B37997431A69203000519DBE /* SZTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B37997561A69203100519DBE /* SZTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B379973F1A69203000519DBE /* SZTextView.framework */; };
 		B37997571A69203100519DBE /* SZTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B379973F1A69203000519DBE /* SZTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B37997661A69210D00519DBE /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20F616F171FC00D92F51 /* SZTextView.m */; };
+		B37997671A69224400519DBE /* SZTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8D20F516F171FC00D92F51 /* SZTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,9 +109,6 @@
 		5B8D20F616F171FC00D92F51 /* SZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZTextView.m; path = ../../Classes/SZTextView.m; sourceTree = "<group>"; };
 		B379973F1A69203000519DBE /* SZTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37997421A69203000519DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B37997431A69203000519DBE /* SZTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTextView.h; sourceTree = "<group>"; };
-		B37997511A69203100519DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B37997521A69203100519DBE /* SZTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZTextViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +148,6 @@
 				5B8D20C016F1717100D92F51 /* SZTextView */,
 				5B8D20E416F1717200D92F51 /* SZTextViewTests */,
 				B37997401A69203000519DBE /* SZTextView */,
-				B379974F1A69203100519DBE /* SZTextViewTests */,
 				5B8D20B916F1717100D92F51 /* Frameworks */,
 				5B8D20B816F1717100D92F51 /* Products */,
 			);
@@ -230,7 +226,6 @@
 		B37997401A69203000519DBE /* SZTextView */ = {
 			isa = PBXGroup;
 			children = (
-				B37997431A69203000519DBE /* SZTextView.h */,
 				B37997411A69203000519DBE /* Supporting Files */,
 			);
 			path = SZTextView;
@@ -244,23 +239,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B379974F1A69203100519DBE /* SZTextViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				B37997521A69203100519DBE /* SZTextViewTests.m */,
-				B37997501A69203100519DBE /* Supporting Files */,
-			);
-			path = SZTextViewTests;
-			sourceTree = "<group>";
-		};
-		B37997501A69203100519DBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B37997511A69203100519DBE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,7 +246,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37997441A69203000519DBE /* SZTextView.h in Headers */,
+				B37997671A69224400519DBE /* SZTextView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
