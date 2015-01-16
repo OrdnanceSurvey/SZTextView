@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B379975F1A69208700519DBE /* SZTextViewUniversalFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B37997601A69208700519DBE /* Build configuration list for PBXAggregateTarget "SZTextViewUniversalFramework" */;
+			buildPhases = (
+				B37997651A6920A100519DBE /* ShellScript */,
+			);
+			dependencies = (
+				B37997641A69209E00519DBE /* PBXTargetDependency */,
+			);
+			name = SZTextViewUniversalFramework;
+			productName = SZTextViewUniversalFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4B737CB6197B1A67006F3493 /* SZTextViewStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B737CB5197B1A67006F3493 /* SZTextViewStoryboardTests.m */; };
 		5B8D20BB16F1717100D92F51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D20BA16F1717100D92F51 /* UIKit.framework */; };
@@ -24,6 +39,10 @@
 		5B8D20E916F1717200D92F51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D20E716F1717200D92F51 /* InfoPlist.strings */; };
 		5B8D20EC16F1717200D92F51 /* SZTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20EB16F1717200D92F51 /* SZTextViewTests.m */; };
 		5B8D20F816F171FC00D92F51 /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20F616F171FC00D92F51 /* SZTextView.m */; };
+		B37997561A69203100519DBE /* SZTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B379973F1A69203000519DBE /* SZTextView.framework */; };
+		B37997571A69203100519DBE /* SZTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B379973F1A69203000519DBE /* SZTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B37997661A69210D00519DBE /* SZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D20F616F171FC00D92F51 /* SZTextView.m */; };
+		B37997671A69224400519DBE /* SZTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8D20F516F171FC00D92F51 /* SZTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +53,39 @@
 			remoteGlobalIDString = 5B8D20B616F1717100D92F51;
 			remoteInfo = SZTextView;
 		};
+		B37997541A69203100519DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B8D20AF16F1717100D92F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B379973E1A69203000519DBE;
+			remoteInfo = SZTextView;
+		};
+		B37997631A69209E00519DBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B8D20AF16F1717100D92F51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B379973E1A69203000519DBE;
+			remoteInfo = SZTextView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B379975B1A69203100519DBE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B37997571A69203100519DBE /* SZTextView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B737CB5197B1A67006F3493 /* SZTextViewStoryboardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTextViewStoryboardTests.m; sourceTree = "<group>"; };
-		5B8D20B716F1717100D92F51 /* SZTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8D20B716F1717100D92F51 /* SZTextViewTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZTextViewTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8D20BA16F1717100D92F51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5B8D20BC16F1717100D92F51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5B8D20BE16F1717100D92F51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +107,8 @@
 		5B8D20EB16F1717200D92F51 /* SZTextViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SZTextViewTests.m; path = ../SZTextViewTests/SZTextViewTests.m; sourceTree = "<group>"; };
 		5B8D20F516F171FC00D92F51 /* SZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; name = SZTextView.h; path = ../../Classes/SZTextView.h; sourceTree = "<group>"; };
 		5B8D20F616F171FC00D92F51 /* SZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZTextView.m; path = ../../Classes/SZTextView.m; sourceTree = "<group>"; };
+		B379973F1A69203000519DBE /* SZTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SZTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37997421A69203000519DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B8D20BB16F1717100D92F51 /* UIKit.framework in Frameworks */,
+				B37997561A69203100519DBE /* SZTextView.framework in Frameworks */,
 				5B8D20BD16F1717100D92F51 /* Foundation.framework in Frameworks */,
 				5B8D20BF16F1717100D92F51 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -82,6 +132,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B379973B1A69203000519DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +147,7 @@
 			children = (
 				5B8D20C016F1717100D92F51 /* SZTextView */,
 				5B8D20E416F1717200D92F51 /* SZTextViewTests */,
+				B37997401A69203000519DBE /* SZTextView */,
 				5B8D20B916F1717100D92F51 /* Frameworks */,
 				5B8D20B816F1717100D92F51 /* Products */,
 			);
@@ -99,8 +157,9 @@
 		5B8D20B816F1717100D92F51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B8D20B716F1717100D92F51 /* SZTextView.app */,
+				5B8D20B716F1717100D92F51 /* SZTextViewTestApp.app */,
 				5B8D20DD16F1717200D92F51 /* SZTextViewTests.xctest */,
+				B379973F1A69203000519DBE /* SZTextView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,24 +223,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B37997401A69203000519DBE /* SZTextView */ = {
+			isa = PBXGroup;
+			children = (
+				B37997411A69203000519DBE /* Supporting Files */,
+			);
+			path = SZTextView;
+			sourceTree = "<group>";
+		};
+		B37997411A69203000519DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B37997421A69203000519DBE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B379973C1A69203000519DBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37997671A69224400519DBE /* SZTextView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		5B8D20B616F1717100D92F51 /* SZTextView */ = {
+		5B8D20B616F1717100D92F51 /* SZTextViewTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B8D20EF16F1717200D92F51 /* Build configuration list for PBXNativeTarget "SZTextView" */;
+			buildConfigurationList = 5B8D20EF16F1717200D92F51 /* Build configuration list for PBXNativeTarget "SZTextViewTestApp" */;
 			buildPhases = (
 				5B8D20B316F1717100D92F51 /* Sources */,
 				5B8D20B416F1717100D92F51 /* Frameworks */,
 				5B8D20B516F1717100D92F51 /* Resources */,
+				B379975B1A69203100519DBE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B37997551A69203100519DBE /* PBXTargetDependency */,
 			);
-			name = SZTextView;
+			name = SZTextViewTestApp;
 			productName = SZTextView;
-			productReference = 5B8D20B716F1717100D92F51 /* SZTextView.app */;
+			productReference = 5B8D20B716F1717100D92F51 /* SZTextViewTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5B8D20DC16F1717200D92F51 /* SZTextViewTests */ = {
@@ -203,6 +291,24 @@
 			productReference = 5B8D20DD16F1717200D92F51 /* SZTextViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B379973E1A69203000519DBE /* SZTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37997581A69203100519DBE /* Build configuration list for PBXNativeTarget "SZTextView" */;
+			buildPhases = (
+				B379973A1A69203000519DBE /* Sources */,
+				B379973B1A69203000519DBE /* Frameworks */,
+				B379973C1A69203000519DBE /* Headers */,
+				B379973D1A69203000519DBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SZTextView;
+			productName = SZTextView;
+			productReference = B379973F1A69203000519DBE /* SZTextView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +319,14 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = glaszig;
+				TargetAttributes = {
+					B379973E1A69203000519DBE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B379975F1A69208700519DBE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 5B8D20B216F1717100D92F51 /* Build configuration list for PBXProject "SZTextView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -226,8 +340,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B8D20B616F1717100D92F51 /* SZTextView */,
+				5B8D20B616F1717100D92F51 /* SZTextViewTestApp */,
 				5B8D20DC16F1717200D92F51 /* SZTextViewTests */,
+				B379973E1A69203000519DBE /* SZTextView */,
+				B379975F1A69208700519DBE /* SZTextViewUniversalFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +369,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B379973D1A69203000519DBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -268,6 +391,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		B37997651A6920A100519DBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# This script builds the framework for both the simulator and the device, and then combines\n# them into one binary using lipo.\n#\n\n# Set to release configuration.\nCONFIGURATION='Release'\n\n# On build success, the result is placed into the project folder, and finder will open to\n# that location for convenient access to the newly built framework.\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 4. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/build\"\n\n# Step 5. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}/build\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -292,13 +428,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B379973A1A69203000519DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37997661A69210D00519DBE /* SZTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		5B8D20E316F1717200D92F51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B8D20B616F1717100D92F51 /* SZTextView */;
+			target = 5B8D20B616F1717100D92F51 /* SZTextViewTestApp */;
 			targetProxy = 5B8D20E216F1717200D92F51 /* PBXContainerItemProxy */;
+		};
+		B37997551A69203100519DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B379973E1A69203000519DBE /* SZTextView */;
+			targetProxy = B37997541A69203100519DBE /* PBXContainerItemProxy */;
+		};
+		B37997641A69209E00519DBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B379973E1A69203000519DBE /* SZTextView */;
+			targetProxy = B37997631A69209E00519DBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,6 +545,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZTextView/SZTextView-Prefix.pch";
 				INFOPLIST_FILE = "SZTextView/SZTextView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZTextView/SZTextView-Prefix.pch";
 				INFOPLIST_FILE = "SZTextView/SZTextView-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -441,6 +597,91 @@
 			};
 			name = Release;
 		};
+		B37997591A69203100519DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SZTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B379975A1A69203100519DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SZTextView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B37997611A69208700519DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B37997621A69208700519DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B8D20EF16F1717200D92F51 /* Build configuration list for PBXNativeTarget "SZTextView" */ = {
+		5B8D20EF16F1717200D92F51 /* Build configuration list for PBXNativeTarget "SZTextViewTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B8D20F016F1717200D92F51 /* Debug */,
@@ -470,6 +711,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B37997581A69203100519DBE /* Build configuration list for PBXNativeTarget "SZTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37997591A69203100519DBE /* Debug */,
+				B379975A1A69203100519DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B37997601A69208700519DBE /* Build configuration list for PBXAggregateTarget "SZTextViewUniversalFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37997611A69208700519DBE /* Debug */,
+				B37997621A69208700519DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
