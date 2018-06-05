@@ -16,9 +16,12 @@ FOUNDATION_EXPORT const unsigned char SZTextViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SZTextView/PublicHeader.h>
 
+IB_DESIGNABLE
+
 @interface SZTextView : UITextView
 
-@property (copy, nonatomic) NSString *placeholder;
+@property (copy, nonatomic) IBInspectable NSString *placeholder;
+@property (nonatomic) IBInspectable double fadeTime;
 @property (copy, nonatomic) NSAttributedString *attributedPlaceholder;
 @property (retain, nonatomic) UIColor *placeholderTextColor UI_APPEARANCE_SELECTOR;
 

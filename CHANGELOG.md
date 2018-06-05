@@ -1,5 +1,24 @@
 # Changelog
 
+**1.3.0**
+
+ - Allow use in application extensions -- #55 [@simonboots]
+ - Upgraded target platform to 8.0. Older versions are now unsupported.
+
+**1.2.2**
+
+ - Carthage support -- #36 [@iv-mexx]
+
+**1.2.1**
+
+ - Support for fadding animation for placeholder -- #34 [@jaropawlak]
+
+**1.2.0**
+
+ - Supporting IBInspectable for `placeholder` and IB_DESIGNABLE -- #23, #32 [@MoathOthman]
+ - Improved default placeholder color -- #30 [@erf]
+ - Properly syncing inset and offset configured in interface builder
+
 **1.1.10**
 
  - Fixing handling of `contentInset` and `contentOffset` for text views configured in IB or setup in code. See #21. [@pjs7678]

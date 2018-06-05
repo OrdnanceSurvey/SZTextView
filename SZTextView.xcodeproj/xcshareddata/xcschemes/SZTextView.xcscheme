@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B8D20B616F1717100D92F51"
-               BuildableName = "SZTextViewTestApp.app"
-               BlueprintName = "SZTextViewTestApp"
-               ReferencedContainer = "container:SZTextView.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B8D20DC16F1717200D92F51"
-               BuildableName = "SZTextViewTests.xctest"
-               BlueprintName = "SZTextViewTests"
+               BlueprintIdentifier = "5B65306A1AFB933B009D7775"
+               BuildableName = "SZTextView.framework"
+               BlueprintName = "SZTextView"
                ReferencedContainer = "container:SZTextView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B37997481A69203100519DBE"
+               BlueprintIdentifier = "5B6530751AFB933B009D7775"
                BuildableName = "SZTextViewTests.xctest"
                BlueprintName = "SZTextViewTests"
                ReferencedContainer = "container:SZTextView.xcodeproj">
@@ -60,17 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B8D20DC16F1717200D92F51"
-               BuildableName = "SZTextViewTests.xctest"
-               BlueprintName = "SZTextViewTests"
-               ReferencedContainer = "container:SZTextView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B37997481A69203100519DBE"
+               BlueprintIdentifier = "5B6530751AFB933B009D7775"
                BuildableName = "SZTextViewTests.xctest"
                BlueprintName = "SZTextViewTests"
                ReferencedContainer = "container:SZTextView.xcodeproj">
@@ -80,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B8D20B616F1717100D92F51"
-            BuildableName = "SZTextViewTestApp.app"
-            BlueprintName = "SZTextViewTestApp"
+            BlueprintIdentifier = "5B65306A1AFB933B009D7775"
+            BuildableName = "SZTextView.framework"
+            BlueprintName = "SZTextView"
             ReferencedContainer = "container:SZTextView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -99,16 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B8D20B616F1717100D92F51"
-            BuildableName = "SZTextViewTestApp.app"
-            BlueprintName = "SZTextViewTestApp"
+            BlueprintIdentifier = "5B65306A1AFB933B009D7775"
+            BuildableName = "SZTextView.framework"
+            BlueprintName = "SZTextView"
             ReferencedContainer = "container:SZTextView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -118,16 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B8D20B616F1717100D92F51"
-            BuildableName = "SZTextViewTestApp.app"
-            BlueprintName = "SZTextViewTestApp"
+            BlueprintIdentifier = "5B65306A1AFB933B009D7775"
+            BuildableName = "SZTextView.framework"
+            BlueprintName = "SZTextView"
             ReferencedContainer = "container:SZTextView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

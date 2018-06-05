@@ -1,21 +1,34 @@
 # SZTextView 
 
 [![Build Status](https://travis-ci.org/glaszig/SZTextView.svg?branch=master)](https://travis-ci.org/glaszig/SZTextView)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/glaszig/sztextview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 A drop-in UITextView replacement which gives you: a placeholder.  
 Technically it differs from other solutions in that it tries to work like UITextField's private `_placeholderLabel` so you should not suffer ugly glitches like jumping text views or loads of custom drawing code.
 
 ## Requirements
 
-Your iOS project. (Tested on iOS versions 7.x, 8.0. Should also work on 5.x and 6.x)
-
-> **Note**: This is ARC-enabled code. You'll need Xcode 4.2 and OS X 10.6, at least.  
-> **Note**: To run the tests you'll need Xcode 5 with XCTest.
+Your iOS project. Unit-tested on iOS 8.x, 9.x, 10.x -- see `.travis.yml` for details.
 
 ## Installation
 
-Either clone this repo and add the project to your Xcode workspace or use [CocoaPods](http://cocoapods.org).
+Either clone this repo and add the project to your Xcode workspace, use [CocoaPods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
+
+#### CocoaPods
+
+Add this to you Podfile:
+
+```ruby
+pod 'SZTextView'
+```
+
+#### Carthage
+
+Add this line to your Cartfile:
+
+```
+github "glaszig/SZTextView"
+```
 
 ## Usage
 
@@ -42,6 +55,11 @@ If you set an `attributedPlaceholder` and afterwards set `placeholder` to someth
 Also, `placeholder` will be set to `attributedPlaceholder.string` when using the `attributedPlaceholder` setter.
 
 A simple demo and a few unit tests are included.
+
+### Animation
+
+The placeholder is animatable. Just configure the `double` property `fadeTime`
+to the seconds you'd like the animation to take.
 
 ### User Defined Runtime Attributes
 
